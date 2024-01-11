@@ -1,0 +1,265 @@
+/* Hoja styles - Proyecto Desarrollo Web 
+CoderHouse Alumno: Martin Dhuicque 2023
+*/
+/* Reseteo de Estilos */
+*,
+p {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --color-principal: #2b2b2b;
+  --color-secundario: #0095ff;
+  --color-cta: #ffbb00;
+  --font-size-general: 18px;
+}
+
+/* Estilos Generales */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-principal);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.separador-filas {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Header */
+.news-row {
+  background: #f65050;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+}
+
+header {
+  background: #f8f8f8;
+}
+
+/* header .row{
+    display: flex;
+    align-items: end;
+}
+ */
+header .logo-nav {
+  width: 70px;
+  height: 70px;
+}
+
+/* header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+} */
+header nav ul :hover {
+  text-decoration: underline;
+}
+
+header nav ul li {
+  padding: 5px 10px;
+}
+
+/* Fin Header */
+/* Banner Principal  */
+.banner-principal {
+  height: 550px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.banner-principal__caja {
+  background-color: rgba(36, 36, 36, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 60%;
+}
+.banner-principal__titulo {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.banner-principal__subtitulo {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.banner-principal__texto {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.banner-principal__bg {
+  background-image: url(/media/fondo-slide1.jpg);
+  background-size: contain;
+  background-color: #f65050;
+}
+
+/* Fin Banner Principal */
+/* Destacados  */
+.destacados {
+  background: #fafafa;
+  color: #fff;
+  text-align: center;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destacados__caja {
+  background: #0095ff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.destacados__titulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+.destacados__subtitulo {
+  font-size: 16px;
+}
+.destacados__icono {
+  font-size: 30px;
+}
+
+/* Fin Destacados */
+/* Banner Servicios */
+.servicios {
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+.servicios__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.servicios__nombre {
+  font-weight: 700;
+  font-size: 20px;
+}
+.servicios__texto {
+  font-size: var(--font-size-general);
+  margin-bottom: 50px;
+}
+
+/* Fin Servicios */
+/* Estilos Botones */
+.btn-principal {
+  background-color: var(--color-secundario);
+  border: 0px;
+  color: #fff;
+  padding: 1rem;
+  width: 30%;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+
+.btn-principal:hover {
+  background-color: #fff;
+  color: var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+}
+
+/* Fin Botones */
+input {
+  width: 100%;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* Inicio CTA  */
+.cta-banner {
+  background-color: var(--color-cta);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.cta-banner .btn-principal {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cta-banner__titulo {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-banner__texto {
+  width: 90%;
+}
+
+/* Inicio CTA  */
+/* Footer */
+footer .container-fluid {
+  background: #242424;
+}
+
+footer .pie-footer__bg {
+  background-color: #333;
+}
+
+.footer {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+  font-size: 14px;
+}
+.footer a {
+  color: #fff;
+}
+.footer__titulo {
+  font-size: 16px;
+  color: var(--color-secundario);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer__texto {
+  color: #fff;
+  font-weight: 400;
+}
+.footer__nav {
+  padding: 0;
+  /* Elimina el relleno predeterminado de la lista */
+}
+.footer__nav ul {
+  list-style: none;
+  /* Elimina los puntos de la lista */
+  margin-bottom: 0px;
+}
+.footer__nav ul li {
+  margin-bottom: 10px;
+}
+
+.pie-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Fin Footer */
+
+/*# sourceMappingURL=styles.css.map */
