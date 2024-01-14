@@ -36,13 +36,13 @@ ul {
     /* Quita el punto de la lista desordenada */
 }
 
-h1{
+h1 {
     font-size: 40px;
     color: var(--color-principal);
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: 32px;
     color: var(--color-principal);
     font-weight: 700;
@@ -57,8 +57,8 @@ h3 {
 :root {
     --color-principal: #2b2b2b;
     --color-secundario: #0095ff;
-    --color-blanco:#fff;
-    --color-gris:#fafafa;
+    --color-blanco: #fff;
+    --color-gris: #fafafa;
     --color-cta: #ffbb00;
     --font-size-general: 18px;
     --font-size-subgeneral: 16px;
@@ -90,6 +90,7 @@ a {
     text-align: center;
     padding: 5px;
 }
+
 /* -- FIN Noticias y/o Avisos del Sitio */
 
 
@@ -165,8 +166,14 @@ header nav ul li {
         background-image: url(/media/fondo-slide1.jpg);
         background-size: contain;
         background-color: #f65050;
-
     }
+
+    &__bg--cursos {
+        background-image: url(/media/slider-1.jpg);
+        background-size: cover;
+        background-position-y: center
+    }
+
 
 }
 
@@ -177,19 +184,18 @@ header nav ul li {
 /* Destacados  */
 .destacados {
     background: #fafafa;
-    color: #fff;
+    color: var(--color-principal);
     text-align: center;
-    height: 180px;
+    height: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-
     &__caja {
-        background: #0095ff;
         text-align: center;
-        padding: 10px;
-        border-radius: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid var(--color-principal);
     }
 
     &__titulo {
@@ -201,8 +207,10 @@ header nav ul li {
         font-size: 16px;
     }
 
-    &__icono {
+    &__icono,
+    .bi::before {
         font-size: 30px;
+        color: var(--color-secundario);
     }
 
 }
@@ -241,7 +249,7 @@ header nav ul li {
 
 /* Estilos Botones */
 
-%btn-template{
+%btn-template {
     border: 0px;
     padding: 1rem;
     width: 100%;
@@ -249,7 +257,7 @@ header nav ul li {
     font-weight: 600;
     border-radius: 10px;
     text-align: center;
-    margin-top:1rem;
+    margin-top: 1rem;
 }
 
 .btn-principal {
@@ -272,10 +280,11 @@ header nav ul li {
     }
 
     &--tarjeta .bi::before {
-        font-size: 20px; /* Tamaño de fuente deseado para el ícono */
+        font-size: 20px;
+        /* Tamaño de fuente deseado para el ícono */
     }
 
-        &--tarjeta:hover {
+    &--tarjeta:hover {
         background-color: #fff;
         color: var(--color-secundario);
         border: 2px solid var(--color-secundario);
@@ -293,6 +302,7 @@ header nav ul li {
         color: var(--color-);
         border: 1px solid var(--color-secundario)
     }
+
     &--tarjeta {
         @extend %btn-template;
         background-color: var(--color-principal);
@@ -327,11 +337,11 @@ header nav ul li {
         color: #fff;
         background-color: #0095ff;
         border-radius: 0px 0px 15px 15px;
-        font-size:15px;
+        font-size: 15px;
         font-weight: 500;
     }
 
-    &__texto{
+    &__texto {
         font-size: var(--font-size-subgeneral);
     }
 
@@ -380,9 +390,53 @@ input {
     width: 90%;
 }
 
+/* ---FIN CTA-Newsletter */
+
+/* Inicio CTA-Formulario */
 
 
-/* Inicio CTA  */
+.cta-leads {
+
+    height: 350px;
+
+    &__form input,
+    select {
+
+
+        font-size: var(--font-size-subgeneral);
+        padding: .8rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border-color: var(--color-secundario);
+        border-radius: 10px;
+        color: var(--color-principal);
+
+
+
+    }
+
+    &__banner {
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        background: linear-gradient(to top, #060606ba, #222223cc), url(/media/slider-1.jpg);
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 23px;
+        text-align: right;
+        font-weight: 500;
+        color: var(--color-blanco);
+    }
+
+
+
+
+}
+
+
+
+/* ---FIN CTA-Formulario--- */
 
 
 

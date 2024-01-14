@@ -55,8 +55,8 @@ h3 {
 :root {
   --color-principal: #2b2b2b;
   --color-secundario: #0095ff;
-  --color-blanco:#fff;
-  --color-gris:#fafafa;
+  --color-blanco: #fff;
+  --color-gris: #fafafa;
   --color-cta: #ffbb00;
   --font-size-general: 18px;
   --font-size-subgeneral: 16px;
@@ -146,23 +146,28 @@ header nav ul li {
   background-size: contain;
   background-color: #f65050;
 }
+.banner-principal__bg--cursos {
+  background-image: url(/media/slider-1.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
 
 /* Fin Banner Principal */
 /* Destacados  */
 .destacados {
   background: #fafafa;
-  color: #fff;
+  color: var(--color-principal);
   text-align: center;
-  height: 180px;
+  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .destacados__caja {
-  background: #0095ff;
   text-align: center;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--color-principal);
 }
 .destacados__titulo {
   font-size: 18px;
@@ -171,8 +176,10 @@ header nav ul li {
 .destacados__subtitulo {
   font-size: 16px;
 }
-.destacados__icono {
+.destacados__icono,
+.destacados .bi::before {
   font-size: 30px;
+  color: var(--color-secundario);
 }
 
 /* Fin Destacados */
@@ -224,7 +231,8 @@ header nav ul li {
   display: inline-block;
 }
 .btn-principal--tarjeta .bi::before {
-  font-size: 20px; /* Tamaño de fuente deseado para el ícono */
+  font-size: 20px;
+  /* Tamaño de fuente deseado para el ícono */
 }
 .btn-principal--tarjeta:hover {
   background-color: #fff;
@@ -300,7 +308,36 @@ input {
   width: 90%;
 }
 
-/* Inicio CTA  */
+/* ---FIN CTA-Newsletter */
+/* Inicio CTA-Formulario */
+.cta-leads {
+  height: 350px;
+}
+.cta-leads__form input,
+.cta-leads select {
+  font-size: var(--font-size-subgeneral);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-color: var(--color-secundario);
+  border-radius: 10px;
+  color: var(--color-principal);
+}
+.cta-leads__banner {
+  display: grid;
+  justify-content: right;
+  align-items: center;
+  background: linear-gradient(to top, rgba(6, 6, 6, 0.7294117647), rgba(34, 34, 35, 0.8)), url(/media/slider-1.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 23px;
+  text-align: right;
+  font-weight: 500;
+  color: var(--color-blanco);
+}
+
+/* ---FIN CTA-Formulario--- */
 /* Footer */
 footer .container-fluid {
   background: #242424;
