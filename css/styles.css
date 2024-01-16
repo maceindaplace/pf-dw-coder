@@ -142,12 +142,12 @@ header nav ul li {
   margin-bottom: 20px;
 }
 .banner-principal__bg {
-  background-image: url(/media/fondo-slide1.jpg);
+  background-image: url(../media/fondo-slide1.jpg);
   background-size: contain;
   background-color: #f65050;
 }
 .banner-principal__bg--cursos {
-  background-image: url(/media/slider-1.jpg);
+  background-image: url(../media/slider-1.jpg);
   background-size: cover;
   background-position-y: center;
 }
@@ -327,7 +327,7 @@ input {
   display: grid;
   justify-content: right;
   align-items: center;
-  background: linear-gradient(to top, rgba(6, 6, 6, 0.7294117647), rgba(34, 34, 35, 0.8)), url(/media/slider-1.jpg);
+  background: linear-gradient(to top, rgba(6, 6, 6, 0.7294117647), rgba(34, 34, 35, 0.8)), url(../media/slider-1.jpg);
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
