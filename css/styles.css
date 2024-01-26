@@ -279,6 +279,11 @@ header nav ul li {
   font-size: var(--font-size-subgeneral);
 }
 
+/* Logo Empresas */
+.logo-empresas {
+  height: 80px;
+}
+
 input {
   width: 100%;
   font-size: 14px;
