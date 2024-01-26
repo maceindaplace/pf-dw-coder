@@ -1,0 +1,64 @@
+/* Inicio CTA Newsletter */
+
+.cta-banner {
+
+    background-color: var(--color-cta);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.cta-banner .btn-principal {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cta-banner__titulo {
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.cta-banner__texto {
+    width: 90%;
+}
+
+/* ---FIN CTA-Newsletter */
+
+
+
+/* Inicio CTA-Formulario */
+.cta-leads {
+
+    height: 350px;
+
+    &__form input,
+    select {
+
+
+        font-size: var(--font-size-subgeneral);
+        padding: .8rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border-color: var(--color-secundario);
+        border-radius: 10px;
+        color: var(--color-principal);
+    }
+
+    &__banner {
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        background: linear-gradient(to top, #060606ba, #222223cc), url(../media/slider-1.jpg);
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 23px;
+        text-align: right;
+        font-weight: 500;
+        color: var(--color-blanco);
+    }
+}
+
+/* ---FIN CTA-Formulario--- */

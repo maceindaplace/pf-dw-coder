@@ -5,5 +5,155 @@
 
 **/
 
+/* Reseteo de Estilos */
+
+*,
+p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+
+}
+
+i {
+    font-style:normal;
+}
+
+ul {
+    list-style-type: none;
+    /* Quita el punto de la lista desordenada */
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--color-principal);
+    font-weight: 600;
+}
+
+:root {
+    --color-principal: #2b2b2b;
+    --color-secundario: #0095ff;
+    --color-blanco: #fff;
+    --color-gris: #fafafa;
+    --color-cta: #ffbb00;
+    --color-facebook: #1877f2;
+    --color-linkedin: #0077b5;
+    --color-youtube: #FF0000;
+    --font-size-general: 18px;
+    --font-size-subgeneral: 16px;
+
+}
+
+/* Estilos Generales */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-principal);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #f8f8f8;
+}
 
 
+header .logo-nav {
+    width: 70px;
+    height: 70px;
+}
+
+header nav ul :hover {
+    text-decoration: underline;
+}
+
+header nav ul li {
+    padding: .6rem;
+}
+
+/* Fin Header */
+
+/* Footer */
+footer .container-fluid {
+    background: #242424;
+}
+
+footer .pie-footer__bg {
+    background-color: #333
+}
+
+.footer {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    font-size: 14px;
+
+
+    & a {
+        color: #fff;
+
+
+    }
+
+    &__titulo {
+        font-size: 16px;
+        color: var(--color-secundario);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__texto {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    &__nav {
+        padding: 0;
+        /* Elimina el relleno predeterminado de la lista */
+    }
+
+    &__nav ul {
+        list-style: none;
+        /* Elimina los puntos de la lista */
+        margin-bottom: 0px;
+    }
+
+    &__nav ul li {
+
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+.pie-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+
+/* Fin Footer */

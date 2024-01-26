@@ -1,9 +1,27 @@
-/** --- Se puede hacer el CSS por paginas o seccciones
--SI no se utiliza se puede eliminar
+
+/* Banner Servicios Index.html */
+
+.servicios {
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
 
 
-Se separa el codigo entre todos los parshall para que quede ordenado
-El main.scss quedara vacio porque el css se va colocando en cada parshall
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-**/
+    &__nombre {
+        font-weight: 700;
+        font-size: 20px;
+    }
 
+    &__texto {
+        font-size: var(--font-size-general);
+        margin-bottom: 50px;
+    }
+
+}
+
+/* FIN Banner Servicios Index.html */

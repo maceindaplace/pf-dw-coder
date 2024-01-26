@@ -1,32 +1,18 @@
 @charset "UTF-8";
-/* Hoja styles - Proyecto Desarrollo Web 
-CoderHouse Alumno: Martin Dhuicque 2023
+/* Hoja SASS de Estilos - Proyecto Final Desarrollo Web 
+CoderHouse - Alumno: Martin Dhuicque 2024
 */
-/* --El MAIN.SCSS quedara vacio luego de mover los parshalls,
-entonces solo quedaran los @import_ de cada parshall para que se cargan aqui
+/** -- ACA VA EL CSS BASE DEL PROYECTO --
+-Resetos
+-Listas
+-Variables tipo Fuente - Color - Tamaños Etc
 
-Debe ser en cascada para que se respete el orden de los CSS
-
-EJ : 
-
-1- @import "./base";
-2- @import "./components/botones";
-3- @import "./components/rowcta";
-4- @import "./components/tarjetas";
-
-Luego Pages
-
-@import "./pages/index";
-@import "./pages/cursos";
-
-Y asi
-
+**/
 /* Reseteo de Estilos */
 *,
 p {
   font-family: "Montserrat", sans-serif;
   padding: 0px;
-  margin: 0px;
 }
 
 i {
@@ -78,21 +64,9 @@ body {
 }
 
 a {
-  color: #333;
   text-decoration: none;
 }
 
-/* Noticias y/o Avisos del Sitio */
-.news-row {
-  background: #f65050;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 400;
-  text-align: center;
-  padding: 5px;
-}
-
-/* -- FIN Noticias y/o Avisos del Sitio */
 header {
   background: #f8f8f8;
 }
@@ -102,12 +76,6 @@ header .logo-nav {
   height: 70px;
 }
 
-/* header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    font-size: 16px;
-} */
 header nav ul :hover {
   text-decoration: underline;
 }
@@ -117,270 +85,6 @@ header nav ul li {
 }
 
 /* Fin Header */
-/* Banner Principal  */
-.banner-principal {
-  height: 550px;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-.banner-principal__caja {
-  background-color: rgba(36, 36, 36, 0.8);
-  padding: 40px;
-  border-radius: 20px;
-  max-width: 60%;
-}
-.banner-principal__titulo {
-  color: #fff;
-  font-size: 35px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.banner-principal__subtitulo {
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-.banner-principal__texto {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.banner-principal__bg {
-  background-image: url(../media/fondo-slide1.jpg);
-  background-size: contain;
-  background-color: #f65050;
-}
-.banner-principal__bg--cursos {
-  background-image: url(../media/slider-1.jpg);
-  background-size: cover;
-  background-position-y: center;
-}
-
-/* Fin Banner Principal */
-/* Destacados  */
-.destacados {
-  background: #fafafa;
-  color: var(--color-principal);
-  text-align: center;
-  height: 230px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.destacados__caja {
-  text-align: center;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid var(--color-principal);
-}
-.destacados__titulo {
-  font-size: 18px;
-  font-weight: bold;
-}
-.destacados__subtitulo {
-  font-size: 16px;
-}
-.destacados__icono,
-.destacados .bi::before {
-  font-size: 30px;
-  color: var(--color-secundario);
-}
-
-/* Fin Destacados */
-/* Banner Servicios */
-.servicios {
-  padding: 30px;
-  background-color: #f2f2f2;
-  border-radius: 20px;
-}
-.servicios__img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.servicios__nombre {
-  font-weight: 700;
-  font-size: 20px;
-}
-.servicios__texto {
-  font-size: var(--font-size-general);
-  margin-bottom: 50px;
-}
-
-/* Fin Servicios */
-/* Estilos Botones */
-.btn-secundario--tarjeta, .btn-secundario, .btn-principal--tarjeta, .btn-principal {
-  border: 0px;
-  padding: 1rem;
-  width: 100%;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.btn-principal {
-  background-color: var(--color-secundario);
-  color: var(--color-blanco);
-}
-.btn-principal:hover {
-  background-color: #fff;
-  color: var(--color-secundario);
-  border: 1px solid var(--color-secundario);
-}
-.btn-principal--tarjeta {
-  background-color: var(--color-secundario);
-  color: #fff;
-  border: 2px solid var(--color-secundario);
-  display: inline-block;
-}
-.btn-principal--tarjeta .bi::before {
-  font-size: 20px;
-  /* Tamaño de fuente deseado para el ícono */
-}
-.btn-principal--tarjeta:hover {
-  background-color: #fff;
-  color: var(--color-secundario);
-  border: 2px solid var(--color-secundario);
-}
-
-.btn-secundario {
-  background-color: #fff;
-  color: var(--color-principal);
-}
-.btn-secundario:hover {
-  background-color: #fff;
-  color: var(--color-);
-  border: 1px solid var(--color-secundario);
-}
-.btn-secundario--tarjeta {
-  background-color: var(--color-principal);
-  color: #fff;
-  border: 2px solid var(--color-principal);
-  display: inline-block;
-}
-
-/* --FIN ESTILOS Botones */
-/* Tarjetas Cursos */
-.tarjeta_curso__img {
-  margin-top: 1rem;
-  border-radius: 15px 15px 0px 0px;
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-.tarjeta_curso__list {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  color: #fff;
-  background-color: #0095ff;
-  border-radius: 0px 0px 15px 15px;
-  font-size: 15px;
-  font-weight: 500;
-}
-.tarjeta_curso__texto {
-  font-size: var(--font-size-subgeneral);
-}
-
-/* Logo Empresas */
-.logo-empresas {
-  height: 80px;
-}
-
-/* Estilos Contacto */
-.contacto-rrss {
-  background-color: var(--color-gris);
-  border-radius: 10px;
-  height: fit-content;
-  padding: 30px;
-}
-.contacto-rrss__texto {
-  font-size: var(--font-size-subgeneral);
-  margin-bottom: 20px;
-}
-.contacto-rrss__iconos, .contacto-rrss i {
-  font-weight: 600;
-}
-.contacto-rrss__iconos,
-.contacto-rrss .bi-facebook::before {
-  font-size: 23px;
-  color: var(--color-facebook);
-  margin-right: 10px;
-}
-.contacto-rrss .bi-youtube::before {
-  font-size: 23px;
-  color: var(--color-youtube);
-  margin-right: 10px;
-}
-.contacto-rrss .bi-linkedin::before {
-  font-size: 23px;
-  color: var(--color-linkedin);
-  margin-right: 10px;
-}
-
-input {
-  width: 100%;
-  font-size: 14px;
-  padding: 20px;
-}
-
-/* Inicio CTA  */
-.cta-banner {
-  background-color: var(--color-cta);
-  padding: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.cta-banner .btn-principal {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.cta-banner__titulo {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.cta-banner__texto {
-  width: 90%;
-}
-
-/* ---FIN CTA-Newsletter */
-/* Inicio CTA-Formulario */
-.cta-leads {
-  height: 350px;
-}
-.cta-leads__form input,
-.cta-leads select {
-  font-size: var(--font-size-subgeneral);
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  border-color: var(--color-secundario);
-  border-radius: 10px;
-  color: var(--color-principal);
-}
-.cta-leads__banner {
-  display: grid;
-  justify-content: right;
-  align-items: center;
-  background: linear-gradient(to top, rgba(6, 6, 6, 0.7294117647), rgba(34, 34, 35, 0.8)), url(../media/slider-1.jpg);
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 23px;
-  text-align: right;
-  font-weight: 500;
-  color: var(--color-blanco);
-}
-
-/* ---FIN CTA-Formulario--- */
 /* Footer */
 footer .container-fluid {
   background: #242424;
@@ -434,5 +138,280 @@ footer .pie-footer__bg {
 }
 
 /* Fin Footer */
+/* Fila Superior para Noticias y/o Avisos del Sitio */
+.news-row {
+  background: #f65050;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+}
+
+/* FIN Fila Superior para Noticias y/o Avisos del Sitio */
+/* Banner Principal: Secciones Index y Cursos*/
+.banner-principal {
+  height: 550px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.banner-principal__caja {
+  background-color: rgba(36, 36, 36, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 60%;
+}
+.banner-principal__titulo {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.banner-principal__subtitulo {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.banner-principal__texto {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.banner-principal__bg {
+  background-image: url(../media/fondo-slide1.jpg);
+  background-size: contain;
+  background-color: #f65050;
+}
+.banner-principal__bg--cursos {
+  background-image: url(../media/slider-1.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+
+/* FIN Banner Principal: Secciones Index y Cursos */
+/* Iconos Atributos Destacados*/
+.destacados {
+  background: #fafafa;
+  color: var(--color-principal);
+  text-align: center;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destacados__caja {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--color-principal);
+}
+.destacados__titulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+.destacados__subtitulo {
+  font-size: 16px;
+}
+.destacados__icono,
+.destacados .bi::before {
+  font-size: 30px;
+  color: var(--color-secundario);
+}
+
+/* FIN Iconos Atributos Destacados */
+/* Estilos Botones Generales */
+.btn-secundario--tarjeta, .btn-secundario, .btn-principal--tarjeta, .btn-principal {
+  border: 0px;
+  padding: 1rem;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-principal {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+.btn-principal:hover {
+  background-color: #fff;
+  color: var(--color-secundario);
+  border: 1px solid var(--color-secundario);
+}
+.btn-principal--tarjeta {
+  background-color: var(--color-secundario);
+  color: #fff;
+  border: 2px solid var(--color-secundario);
+  display: inline-block;
+}
+.btn-principal--tarjeta .bi::before {
+  font-size: 20px;
+  /* Tamaño de fuente deseado para el ícono */
+}
+.btn-principal--tarjeta:hover {
+  background-color: #fff;
+  color: var(--color-secundario);
+  border: 2px solid var(--color-secundario);
+}
+
+.btn-secundario {
+  background-color: #fff;
+  color: var(--color-principal);
+}
+.btn-secundario:hover {
+  background-color: #fff;
+  color: var(--color-);
+  border: 1px solid var(--color-secundario);
+}
+.btn-secundario--tarjeta {
+  background-color: var(--color-principal);
+  color: #fff;
+  border: 2px solid var(--color-principal);
+  display: inline-block;
+}
+
+/* FIN Estilos Botones Generales */
+/* Inicio CTA Newsletter */
+.cta-banner {
+  background-color: var(--color-cta);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.cta-banner .btn-principal {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cta-banner__titulo {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-banner__texto {
+  width: 90%;
+}
+
+/* ---FIN CTA-Newsletter */
+/* Inicio CTA-Formulario */
+.cta-leads {
+  height: 350px;
+}
+.cta-leads__form input,
+.cta-leads select {
+  font-size: var(--font-size-subgeneral);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-color: var(--color-secundario);
+  border-radius: 10px;
+  color: var(--color-principal);
+}
+.cta-leads__banner {
+  display: grid;
+  justify-content: right;
+  align-items: center;
+  background: linear-gradient(to top, rgba(6, 6, 6, 0.7294117647), rgba(34, 34, 35, 0.8)), url(../media/slider-1.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 23px;
+  text-align: right;
+  font-weight: 500;
+  color: var(--color-blanco);
+}
+
+/* ---FIN CTA-Formulario--- */
+/* Tarjetas Cursos Online */
+.tarjeta_curso__img {
+  margin-top: 1rem;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.tarjeta_curso__list {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: #0095ff;
+  border-radius: 0px 0px 15px 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.tarjeta_curso__texto {
+  font-size: var(--font-size-subgeneral);
+}
+
+/* FIN Tarjetas Cursos Online */
+/* Logos Empresas Carousel */
+.logo-empresas {
+  height: 80px;
+}
+
+/* Estilos Contacto */
+.contacto-rrss {
+  background-color: var(--color-gris);
+  border-radius: 10px;
+  height: fit-content;
+  padding: 30px;
+}
+.contacto-rrss__texto {
+  font-size: var(--font-size-subgeneral);
+  margin-bottom: 20px;
+}
+.contacto-rrss__iconos, .contacto-rrss i {
+  font-weight: 600;
+}
+.contacto-rrss__iconos,
+.contacto-rrss .bi::before {
+  margin-right: 10px;
+  font-size: 23px;
+}
+.contacto-rrss .bi-facebook::before {
+  color: var(--color-facebook);
+}
+.contacto-rrss .bi-youtube::before {
+  color: var(--color-youtube);
+}
+.contacto-rrss .bi-linkedin::before {
+  color: var(--color-linkedin);
+}
+
+input {
+  width: 100%;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* FIN Estilos Contacto */
+/* Banner Servicios Index.html */
+.servicios {
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+.servicios__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.servicios__nombre {
+  font-weight: 700;
+  font-size: 20px;
+}
+.servicios__texto {
+  font-size: var(--font-size-general);
+  margin-bottom: 50px;
+}
+
+/* FIN Banner Servicios Index.html */
 
 /*# sourceMappingURL=styles.css.map */

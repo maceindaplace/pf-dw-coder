@@ -1,0 +1,57 @@
+/* Banner Principal: Secciones Index y Cursos*/
+
+.banner-principal {
+
+    height: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__caja {
+        background-color: rgba(36, 36, 36, 0.8);
+        padding: 40px;
+        border-radius: 20px;
+        max-width: 60%;
+
+    }
+
+    &__titulo {
+        color: #fff;
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+    }
+
+    &__subtitulo {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+
+    &__texto {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+    }
+
+    &__bg {
+        background-image: url(../media/fondo-slide1.jpg);
+        background-size: contain;
+        background-color: #f65050;
+    }
+
+    &__bg--cursos {
+        background-image: url(../media/slider-1.jpg);
+        background-size: cover;
+        background-position-y: center
+    }
+
+
+}
+
+/* FIN Banner Principal: Secciones Index y Cursos */

@@ -1,0 +1,50 @@
+/* Estilos Contacto */
+
+.contacto-rrss {
+    background-color: var(--color-gris);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 30px;
+
+    &__texto {
+        font-size: var(--font-size-subgeneral);
+        margin-bottom: 20px;
+
+    }
+    &__iconos, i{
+        font-weight: 600;
+    }
+
+    &__iconos,
+
+    .bi::before{
+        margin-right: 10px;
+        font-size: 23px;
+
+    }
+
+    .bi-facebook::before {
+        color: var(--color-facebook);
+    }
+
+    .bi-youtube::before {
+        color: var(--color-youtube);
+    }
+
+    .bi-linkedin::before {
+        color:var(--color-linkedin);
+    }
+
+}
+
+
+
+
+input {
+    width: 100%;
+    font-size: 14px;
+    padding: 20px;
+
+}
+
+/* FIN Estilos Contacto */

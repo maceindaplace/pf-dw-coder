@@ -1,0 +1,35 @@
+/* Iconos Atributos Destacados*/
+.destacados {
+    background: #fafafa;
+    color: var(--color-principal);
+    text-align: center;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__caja {
+        text-align: center;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid var(--color-principal);
+    }
+
+    &__titulo {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__subtitulo {
+        font-size: 16px;
+    }
+
+    &__icono,
+    .bi::before {
+        font-size: 30px;
+        color: var(--color-secundario);
+    }
+
+}
+
+/* FIN Iconos Atributos Destacados */
