@@ -71,6 +71,10 @@ header {
   background: #f8f8f8;
 }
 
+.titulos-paginash1 {
+  color: var(--color-secundario);
+}
+
 header .logo-nav {
   width: 70px;
   height: 70px;
@@ -97,9 +101,6 @@ footer .pie-footer__bg {
 .footer {
   color: #fff;
   padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  height: 250px;
   font-size: 14px;
 }
 .footer a {
@@ -136,6 +137,10 @@ footer .pie-footer__bg {
   font-weight: 400;
   color: #fff;
 }
+.pie-footer a {
+  color: #fff;
+  font-weight: bold;
+}
 
 /* Fin Footer */
 /* Fila Superior para Noticias y/o Avisos del Sitio */
@@ -151,8 +156,8 @@ footer .pie-footer__bg {
 /* FIN Fila Superior para Noticias y/o Avisos del Sitio */
 /* Banner Principal: Secciones Index y Cursos*/
 .banner-principal {
-  height: 550px;
   display: flex;
+  height: 550px;
   flex-wrap: nowrap;
   align-items: center;
 }
@@ -160,7 +165,7 @@ footer .pie-footer__bg {
   background-color: rgba(36, 36, 36, 0.8);
   padding: 40px;
   border-radius: 20px;
-  max-width: 60%;
+  max-width: 550px;
 }
 .banner-principal__titulo {
   color: #fff;
@@ -182,13 +187,15 @@ footer .pie-footer__bg {
 }
 .banner-principal__bg {
   background-image: url(../media/fondo-slide1.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #f65050;
 }
 .banner-principal__bg--cursos {
   background-image: url(../media/slider-1.jpg);
   background-size: cover;
   background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 /* FIN Banner Principal: Secciones Index y Cursos */
@@ -197,7 +204,6 @@ footer .pie-footer__bg {
   background: #fafafa;
   color: var(--color-principal);
   text-align: center;
-  height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,9 +307,6 @@ footer .pie-footer__bg {
 
 /* ---FIN CTA-Newsletter */
 /* Inicio CTA-Formulario */
-.cta-leads {
-  height: 350px;
-}
 .cta-leads__form input,
 .cta-leads select {
   font-size: var(--font-size-subgeneral);
@@ -329,6 +332,17 @@ footer .pie-footer__bg {
 }
 
 /* ---FIN CTA-Formulario--- */
+.accordion-button {
+  background-color: var(--color-gris);
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-secundario);
+  color: #fff;
+  font-weight: bold;
+}
+
 /* Tarjetas Cursos Online */
 .tarjeta_curso__img {
   margin-top: 1rem;
@@ -384,6 +398,10 @@ footer .pie-footer__bg {
 }
 .contacto-rrss .bi-linkedin::before {
   color: var(--color-linkedin);
+}
+
+.contacto-rrss a {
+  color: var(--color-principal);
 }
 
 input {

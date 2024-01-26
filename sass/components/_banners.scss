@@ -2,8 +2,8 @@
 
 .banner-principal {
 
-    height: 550px;
     display: flex;
+    height: 550px;
     flex-wrap: nowrap;
     align-items: center;
 
@@ -11,7 +11,7 @@
         background-color: rgba(36, 36, 36, 0.8);
         padding: 40px;
         border-radius: 20px;
-        max-width: 60%;
+        max-width: 550px;
 
     }
 
@@ -41,14 +41,19 @@
 
     &__bg {
         background-image: url(../media/fondo-slide1.jpg);
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-color: #f65050;
+        
     }
 
     &__bg--cursos {
         background-image: url(../media/slider-1.jpg);
         background-size: cover;
-        background-position-y: center
+        background-position-y: center;
+        background-repeat: no-repeat;
+
+        
     }
 
 
