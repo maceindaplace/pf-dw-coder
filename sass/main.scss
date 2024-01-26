@@ -30,6 +30,9 @@ p {
     padding: 0px;
     margin: 0px;
 }
+i{
+    font-style:normal;
+}
 
 ul {
     list-style-type: none;
@@ -60,6 +63,9 @@ h3 {
     --color-blanco: #fff;
     --color-gris: #fafafa;
     --color-cta: #ffbb00;
+    --color-facebook: #1877f2;
+    --color-linkedin: #0077b5;
+    --color-youtube: #FF0000;
     --font-size-general: 18px;
     --font-size-subgeneral: 16px;
 
@@ -352,8 +358,43 @@ header nav ul li {
     height: 80px;
 }
 
+/* Estilos Contacto */
 
+.contacto-rrss {
+    background-color: var(--color-gris);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 30px;
 
+    &__texto {
+        font-size: var(--font-size-subgeneral);
+        margin-bottom: 20px;
+
+    }
+    &__iconos, i{
+        font-weight: 600;
+    }
+
+    &__iconos,
+    .bi-facebook::before {
+        font-size: 23px;
+        color: var(--color-facebook);
+        margin-right: 10px;
+    }
+
+    .bi-youtube::before {
+        font-size: 23px;
+        color: var(--color-youtube);
+        margin-right: 10px;
+    }
+
+    .bi-linkedin::before {
+        font-size: 23px;
+        color:var(--color-linkedin);
+        margin-right: 10px;
+    }
+
+}
 
 
 
